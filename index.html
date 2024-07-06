@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casino Virtual</title>
+  <link rel="icon" href="ICONO.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content-wrapper">
+      <img src="logo.png" alt="Joker's Jewels" class="logo">
+      <h2>CASINO VIRTUAL</h2>
+      <h3>Gira la ruleta y obtene tu premio</h3>
+      <div class="wheel-container">
+        <div id="wheel" class="wheel">
+          <canvas id="canvas" width="500" height="500"></canvas>
+          <div class="pointer"></div>
+          <div class="spin-button-wrapper">
+            <button id="spinButton" class="cta">Girar</button>
+          </div>
+        </div>
+      </div>
+      <div id="result" class="result">
+        <h2 id="prize"></h2>
+        <a id="claimButton" class="cta" href="#" target="_blank">Reclamar Premio</a>
+      </div>
+    </div>
+  </div>
+  <audio id="spinSound" src="sounds/ruleta.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
+
