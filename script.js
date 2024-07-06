@@ -7,8 +7,8 @@ const claimButton = document.getElementById("claimButton");
 const spinSound = document.getElementById("spinSound");
 
 const prizes = [
-    { text: "10% OFF", color: "red" },
-    { text: "20% OFF", color: "black" }
+    { text: "10%", color: "red" },
+    { text: "20%", color: "black" }
 ];
 
 const segments = 8; // number of segments on the wheel
@@ -53,7 +53,7 @@ spinButton.addEventListener("click", () => {
         canvas.style.transform = `rotate(${actualSpin}deg)`;
 
         resultDiv.style.display = "block";
-        prizeText.innerText = `¡Has ganado ${prize}!`;
+        prizeText.innerText = `¡Reclamando tu bonificacion....!`;
         const message = `Hola quiero crear un usuario y reclamar mi bonificación`;
         const whatsappLink = `https://wa.me/5492975815752?text=${encodeURIComponent(message)}`;
         claimButton.href = whatsappLink;
