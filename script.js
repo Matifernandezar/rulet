@@ -54,7 +54,7 @@ spinButton.addEventListener("click", () => {
 
         resultDiv.style.display = "block";
         prizeText.innerText = `¡Has ganado ${prize}!`;
-        const message = `Hola quiero reclamar mi bonificación del ${prize}`;
+        const message = `Hola quiero crear un usuario y reclamar mi bonificación`;
         const whatsappLink = `https://wa.me/5492975815752?text=${encodeURIComponent(message)}`;
         claimButton.href = whatsappLink;
         window.location.href = whatsappLink;
